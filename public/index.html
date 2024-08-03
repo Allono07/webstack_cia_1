@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <link rel="icon" type="image/x-icon" href="/website2/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #f8c291, #6a89cc);
+        color: #333;
+    }
+
+    nav {
+        background-color: #2c3e50;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #34495e;
+    }
+
+    .content {
+        padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    h2 {
+        color: #34495e;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style: disc inside;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+</style>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Web Stack Development</h1>
+        <div class="carousel">
+            <img src="images/image1.png" class="carousel-image" alt="Image 1">
+            <img src="images/image2.webp" class="carousel-image" alt="Image 2">
+            <img src="images/image3.jpg" class="carousel-image" alt="Image 3">
+            <div class="carousel-buttons">
+                <button onclick="previousImage()">&#10094;</button>
+                <button onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+        <p>- by Allen Thomson 3M.Sc CSA</p>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA2FxGShQ8O9yUiosB103qJgVvi9aCnHSQ",
+          authDomain: "webstack-cia-1.firebaseapp.com",
+          projectId: "webstack-cia-1",
+          storageBucket: "webstack-cia-1.appspot.com",
+          messagingSenderId: "761406555442",
+          appId: "1:761406555442:web:41b852fe2a7b49d7e9832b",
+          measurementId: "G-KFDKGQ7DGQ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

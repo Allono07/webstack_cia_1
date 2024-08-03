@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+        .image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Web Search Engine</h1>
+        <div class="image">
+            <img src="images/websearchengine.png">
+        </div>
+        <p>A web search engine is a software system designed to carry out web searches, which means to search the World Wide Web in a systematic way for particular information specified in a textual web search query.</p>
+        
+        <h2>How Web Search Engines Work</h2>
+        <ul>
+            <li><strong>Crawling:</strong> Web search engines use web crawlers, also known as spiders or bots, to browse the web and gather information about web pages. These crawlers follow links from page to page and site to site, collecting data.</li>
+            <li><strong>Indexing:</strong> The collected data is then organized and stored in an index. This index contains all the keywords and their locations, enabling quick retrieval of information when a user performs a search.</li>
+            <li><strong>Searching:</strong> When a user enters a query into a search engine, the engine searches its index to find the most relevant results. The search engine uses algorithms to rank these results based on relevance, popularity, and other factors.</li>
+        </ul>
+
+        <h2>Key Components of a Search Engine</h2>
+        <ul>
+            <li><strong>Web Crawler:</strong> A program that automatically fetches web pages and follows the links within them.</li>
+            <li><strong>Index:</strong> A structured database that stores information about the content of web pages.</li>
+            <li><strong>Search Algorithm:</strong> A set of rules and procedures that determine the relevance of web pages based on a user’s query.</li>
+            <li><strong>User Interface:</strong> The front-end part where users enter their queries and view the results.</li>
+        </ul>
+
+        <h2>Popular Web Search Engines</h2>
+        <ul>
+            <li><strong>Google:</strong> The most widely used search engine, known for its powerful search algorithms and comprehensive index.</li>
+            <li><strong>Bing:</strong> A search engine by Microsoft, known for its integration with other Microsoft services.</li>
+            <li><strong>Yahoo:</strong> One of the oldest search engines, now powered by Bing’s search technology.</li>
+            <li><strong>DuckDuckGo:</strong> A privacy-focused search engine that does not track user activity.</li>
+        </ul>
+
+        <h2>Search Engine Optimization (SEO)</h2>
+        <p>SEO is the practice of optimizing web pages to rank higher in search engine results. It involves various techniques, including keyword optimization, link building, and improving site structure and content quality.</p>
+
+        <h2>Conclusion</h2>
+        <p>Web search engines play a crucial role in navigating the vast amount of information available on the internet. By understanding how they work and the key components involved, users can better utilize these tools for finding information quickly and efficiently.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
