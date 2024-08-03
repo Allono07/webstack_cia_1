@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Indexing</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+        .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto; 
+    margin: auto;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+}
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Web Indexing</h1>
+        <div class="image">
+            <img src="images/webindexing.webp">
+        </div>
+        <p>Web indexing, also known as internet indexing or web data indexing, involves collecting, parsing, and storing data to facilitate fast and accurate information retrieval. This is a crucial part of search engine functionality.</p>
+        
+        <h2>How Web Indexing Works</h2>
+        <ul>
+            <li><strong>Parsing:</strong> The first step involves parsing the fetched content from web crawlers to extract important information, such as text, keywords, metadata, and links.</li>
+            <li><strong>Data Structuring:</strong> The parsed information is then structured in a way that makes it easy to store and retrieve. This often involves creating data structures like inverted indices.</li>
+            <li><strong>Storage:</strong> The structured data is stored in a database or an index, which is optimized for quick search and retrieval operations.</li>
+            <li><strong>Keyword Mapping:</strong> Keywords extracted from the parsed content are mapped to their respective locations in the index, facilitating fast retrieval based on user queries.</li>
+            <li><strong>Regular Updates:</strong> The index is regularly updated as new content is crawled, ensuring that the search results remain current and relevant.</li>
+        </ul>
+
+        <h2>Key Components of a Web Indexing System</h2>
+        <ul>
+            <li><strong>Parser:</strong> A tool that processes the raw content fetched by the web crawler to extract meaningful data.</li>
+            <li><strong>Indexer:</strong> A system that structures the parsed data and stores it in an index for quick retrieval.</li>
+            <li><strong>Database:</strong> The storage system that holds the indexed data, often optimized for fast read and write operations.</li>
+            <li><strong>Updater:</strong> A mechanism to keep the index current by adding, modifying, or removing data as new information is crawled.</li>
+        </ul>
+
+        <h2>Challenges in Web Indexing</h2>
+        <ul>
+            <li><strong>Scalability:</strong> Handling and indexing the vast amount of data available on the web requires scalable infrastructure.</li>
+            <li><strong>Data Quality:</strong> Ensuring the accuracy and relevance of the indexed data is crucial for providing reliable search results.</li>
+            <li><strong>Real-time Indexing:</strong> Keeping the index updated in real-time as new content is published on the web can be challenging.</li>
+            <li><strong>Handling Dynamic Content:</strong> Indexing dynamically generated content, such as AJAX-based web pages, requires specialized techniques.</li>
+        </ul>
+
+        <h2>Applications of Web Indexing</h2>
+        <ul>
+            <li><strong>Search Engines:</strong> Web indexing is fundamental to search engines, enabling them to quickly retrieve relevant results based on user queries.</li>
+            <li><strong>Data Analytics:</strong> Indexed data is used in various data analytics applications to derive insights and make data-driven decisions.</li>
+            <li><strong>Content Management:</strong> Web indexing helps in organizing and managing large volumes of web content for easy access and retrieval.</li>
+            <li><strong>Information Retrieval:</strong> Indexing facilitates efficient information retrieval across various domains, including academic research, legal databases, and more.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Web indexing is a critical process that underpins the functionality of search engines and other information retrieval systems. By understanding how web indexing works and the challenges involved, we can better appreciate the importance of this technology in navigating the vast amount of information available on the web.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

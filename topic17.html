@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS2 vs CSS3</title>
+    <link rel="icon" type="image/x-icon" href="/website2/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .code {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>CSS2 vs CSS3</h1>
+        <p>CSS3 is the latest evolution of the Cascading Style Sheets language, bringing new features and capabilities to style web pages more effectively and efficiently. This guide compares the key differences between CSS2 and CSS3.</p>
+        
+        <h2>Key Differences Between CSS2 and CSS3</h2>
+        <ul>
+            <li><strong>Modularization:</strong> CSS3 is divided into modules, allowing for more flexible and incremental updates. CSS2 is a single monolithic specification.</li>
+            <li><strong>Selectors:</strong> CSS3 introduces new selectors, including attribute selectors, pseudo-classes, and pseudo-elements, enhancing element targeting capabilities.</li>
+            <li><strong>Box Model:</strong> CSS3 includes new properties for box-sizing, border images, and box shadows, providing greater control over element boxes.</li>
+            <li><strong>Backgrounds and Borders:</strong> CSS3 supports multiple backgrounds, background clipping, gradients, and rounded corners, unlike CSS2.</li>
+            <li><strong>Text Effects:</strong> CSS3 adds text shadows, word wrapping, and custom fonts using @font-face, which are not available in CSS2.</li>
+            <li><strong>Transformations:</strong> CSS3 enables 2D and 3D transforms using properties like rotate, scale, and translate, a feature absent in CSS2.</li>
+            <li><strong>Transitions and Animations:</strong> CSS3 supports smooth transitions between states and keyframe animations, whereas CSS2 does not.</li>
+            <li><strong>Layout Models:</strong> CSS3 introduces new layout models like Flexbox and Grid, which provide more robust and flexible layout options compared to CSS2.</li>
+        </ul>
+
+        <h2>Example: Rounded Corners in CSS3</h2>
+        <p>CSS3 makes it easy to create rounded corners using the <code>border-radius</code> property.</p>
+        <div class="code">
+            <pre>
+.rounded-box {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  border-radius: 25px;
+}
+            </pre>
+        </div>
+        <p>This code creates a 200x200 pixel box with a blue background and rounded corners with a radius of 25 pixels.</p>
+
+        <h2>Example: Text Shadows in CSS3</h2>
+        <p>CSS3 allows adding shadows to text using the <code>text-shadow</code> property.</p>
+        <div class="code">
+            <pre>
+.text-shadow {
+  font-size: 24px;
+  color: #2c3e50;
+  text-shadow: 2px 2px 5px #7f8c8d;
+}
+            </pre>
+        </div>
+        <p>This code adds a gray shadow to the text, making it appear elevated.</p>
+
+        <h2>Example: Transitions in CSS3</h2>
+        <p>CSS3 transitions enable smooth changes from one style to another.</p>
+        <div class="code">
+            <pre>
+.transition-box {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.transition-box:hover {
+  background-color: #2ecc71;
+  transform: rotate(45deg);
+}
+            </pre>
+        </div>
+        <p>This code transitions the background color and rotates the box by 45 degrees when hovered over.</p>
+
+        <h2>Conclusion</h2>
+        <p>CSS3 brings a host of new features that greatly enhance the capabilities of web design and development over CSS2. From new selectors and properties to powerful layout systems and animations, CSS3 allows for more dynamic and visually appealing web pages. By understanding and utilizing these new features, developers can create richer, more interactive web experiences.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client/Server Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; 
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+        .image {
+            position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Client/Server Model</h1>
+        <div class="image">
+            <img src="images/Client-Server-Model.webp">
+        </div>
+        <p>The client/server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients. This model is a fundamental part of network computing.</p>
+        
+        <h2>Key Components</h2>
+        <ul>
+            <li><strong>Client:</strong> The client is a machine or process that requests services or resources from another machine or process.</li>
+            <li><strong>Server:</strong> The server is a machine or process that provides services or resources to clients.</li>
+            <li><strong>Network:</strong> The network connects clients and servers, enabling communication and data exchange between them.</li>
+        </ul>
+
+        <h2>Characteristics of Client/Server Model</h2>
+        <ul>
+            <li><strong>Centralized Resources:</strong> Resources such as files, databases, and applications are centrally located on servers.</li>
+            <li><strong>Scalability:</strong> Servers can be scaled up (adding more resources) or scaled out (adding more servers) to handle increased demand.</li>
+            <li><strong>Security:</strong> Centralized control over resources allows for better security and access management.</li>
+            <li><strong>Maintainability:</strong> Easier to maintain and update as changes are made centrally on servers.</li>
+            <li><strong>Specialization:</strong> Clients and servers can be optimized for their specific roles.</li>
+        </ul>
+
+        <h2>Types of Client/Server Architecture</h2>
+        <ul>
+            <li><strong>Two-Tier Architecture:</strong> In this architecture, the client directly interacts with the server. The presentation layer and application logic are combined on the client side, and the data storage is on the server side.</li>
+            <li><strong>Three-Tier Architecture:</strong> This architecture separates the presentation layer, application logic, and data storage into three distinct layers. The client handles the presentation, the application server manages the logic, and the database server handles data storage.</li>
+            <li><strong>Multi-Tier Architecture:</strong> Extends the three-tier architecture by adding more layers, such as additional application servers, web servers, or specialized service layers.</li>
+        </ul>
+
+        <h2>Advantages of Client/Server Model</h2>
+        <ul>
+            <li><strong>Resource Sharing:</strong> Centralized resources can be efficiently shared among multiple clients.</li>
+            <li><strong>Centralized Control:</strong> Easier to manage security, updates, and maintenance from a central location.</li>
+            <li><strong>Scalability:</strong> Can be easily scaled to meet the demands of a growing number of clients.</li>
+            <li><strong>Reliability:</strong> Centralized servers can be made highly reliable with redundancy and failover mechanisms.</li>
+        </ul>
+
+        <h2>Disadvantages of Client/Server Model</h2>
+        <ul>
+            <li><strong>Single Point of Failure:</strong> If the server fails, all clients lose access to the services or resources.</li>
+            <li><strong>Network Dependency:</strong> Relies on a robust network infrastructure; network issues can affect performance and accessibility.</li>
+            <li><strong>Cost:</strong> Setting up and maintaining servers can be costly, particularly for small organizations.</li>
+        </ul>
+
+        <h2>Examples of Client/Server Applications</h2>
+        <ul>
+            <li><strong>Web Browsers and Web Servers:</strong> Web browsers (clients) request web pages and resources from web servers.</li>
+            <li><strong>Email Clients and Email Servers:</strong> Email clients (e.g., Outlook, Gmail) connect to email servers to send and receive emails.</li>
+            <li><strong>Database Clients and Database Servers:</strong> Database management systems (clients) interact with database servers to query and manage data.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The client/server model is essential in modern computing, providing a structured way to distribute resources and services. It forms the backbone of many internet and network-based applications, offering scalability, centralized control, and efficient resource utilization.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

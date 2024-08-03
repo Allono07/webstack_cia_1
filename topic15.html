@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .code {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>HTML Media</h1>
+        <p>HTML5 introduced several new elements that make it easier to embed and handle media content like audio and video on web pages. This guide covers the key HTML5 media elements and attributes, as well as examples of their usage.</p>
+        
+        <h2>Audio</h2>
+        <p>The <code>&lt;audio&gt;</code> element is used to embed audio content on a web page. You can include multiple source files in different formats to ensure compatibility across different browsers.</p>
+        <div class="code">
+            <pre>
+&lt;audio controls&gt;
+  &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+            </pre>
+        </div>
+
+        <h2>Video</h2>
+        <p>The <code>&lt;video&gt;</code> element is used to embed video content. Similar to the <code>&lt;audio&gt;</code> element, you can include multiple source files to ensure compatibility.</p>
+        <div class="code">
+            <pre>
+&lt;video controls width="600"&gt;
+  &lt;source src="video-file.mp4" type="video/mp4"&gt;
+  &lt;source src="video-file.ogg" type="video/ogg"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <h2>Attributes</h2>
+        <ul>
+            <li><strong>controls:</strong> Adds playback controls like play, pause, and volume.</li>
+            <li><strong>autoplay:</strong> The media will start playing as soon as it is ready.</li>
+            <li><strong>loop:</strong> The media will loop back to the start after finishing.</li>
+            <li><strong>muted:</strong> The media will start muted.</li>
+            <li><strong>preload:</strong> Specifies if and how the media should be loaded when the page loads. Values can be <code>auto</code>, <code>metadata</code>, or <code>none</code>.</li>
+        </ul>
+
+        <h2>Example: Audio Player</h2>
+        <div class="code">
+            <pre>
+&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+  &lt;source src="song.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+            </pre>
+        </div>
+
+        <h2>Example: Video Player</h2>
+        <div class="code">
+            <pre>
+&lt;video controls width="600"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <h2>Captions and Subtitles</h2>
+        <p>To add captions or subtitles to your video, use the <code>&lt;track&gt;</code> element. It allows you to specify different kinds of timed text tracks, including subtitles, captions, and descriptions.</p>
+        <div class="code">
+            <pre>
+&lt;video controls width="600"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <h2>Embedding Media from External Sources</h2>
+        <p>HTML5 also allows for easy embedding of media from external sources, such as YouTube or Vimeo, using the <code>&lt;iframe&gt;</code> element.</p>
+        <div class="code">
+            <pre>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen&gt;&lt;/iframe&gt;
+            </pre>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>HTML5 media elements like <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> provide a standardized way to embed and control media content on web pages. By leveraging these elements and their attributes, developers can create rich, interactive multimedia experiences that work across all modern browsers.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

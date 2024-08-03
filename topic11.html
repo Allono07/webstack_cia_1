@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8c291, #6a89cc);
+            color: #333;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            padding: 100px 20px 20px; /* Adjusted padding for fixed navbar */
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic1.html">Client/Server Model</a></li>
+            <li><a href="topic2.html">Web Search Engine</a></li>
+            <li><a href="topic3.html">Web Crawling</a></li>
+            <li><a href="topic4.html">Web Indexing</a></li>
+            <li><a href="topic5.html">Search Engine Optimization</a></li>
+            <li><a href="topic6.html">Limitations</a></li>
+            <li><a href="topic7.html">Web Services</a></li>
+            <li><a href="topic8.html">Collective Intelligence</a></li>
+            <li><a href="topic9.html">Mobile Web</a></li>
+            <li><a href="topic10.html">Features of Web 3.0</a></li>
+            <li><a href="topic11.html">HTML vs HTML5</a></li>
+            <li><a href="topic12.html">Exploring Editors and Browsers</a></li>
+            <li><a href="topic13.html">HTML5 Semantics</a></li>
+            <li><a href="topic14.html">Canvas</a></li>
+            <li><a href="topic15.html">HTML Media</a></li>
+            <li><a href="topic16.html">Introduction to CSS3</a></li>
+            <li><a href="topic17.html">CSS2 vs CSS3</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>HTML vs HTML5</h1>
+        <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. HTML5 is the latest version of HTML, offering new features, improvements, and enhanced capabilities over previous versions. This guide explores the differences between HTML and HTML5.</p>
+        
+        <h2>New Features in HTML5</h2>
+        <ul>
+            <li><strong>Semantic Elements:</strong> HTML5 introduces new semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> to improve the structure and readability of web content.</li>
+            <li><strong>Audio and Video Support:</strong> HTML5 provides built-in support for audio and video playback using the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements, eliminating the need for third-party plugins like Flash.</li>
+            <li><strong>Canvas Element:</strong> The <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes and images, enabling developers to create interactive graphics and animations directly in the browser.</li>
+            <li><strong>Geolocation API:</strong> HTML5 includes the Geolocation API, which allows web applications to access the geographical location of a device, enabling location-based services.</li>
+            <li><strong>Offline Storage:</strong> HTML5 introduces local storage mechanisms like Web Storage (localStorage and sessionStorage) and IndexedDB, allowing web applications to store data locally on the user's device for offline use.</li>
+            <li><strong>Form Enhancements:</strong> HTML5 offers new form input types (e.g., <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="date"&gt;</code>) and attributes (e.g., <code>required</code>, <code>placeholder</code>) to improve form usability and validation.</li>
+        </ul>
+
+        <h2>Differences Between HTML and HTML5</h2>
+        <ul>
+            <li><strong>Doctype Declaration:</strong> HTML5 uses a simple and shorter doctype declaration (<code>&lt;!DOCTYPE html&gt;</code>) compared to previous versions.</li>
+            <li><strong>Character Encoding:</strong> HTML5 recommends using UTF-8 character encoding (<code>&lt;meta charset="UTF-8"&gt;</code>), simplifying the inclusion of special characters and symbols.</li>
+            <li><strong>Deprecated Elements:</strong> HTML5 removes several outdated and non-semantic elements such as <code>&lt;font&gt;</code>, <code>&lt;center&gt;</code>, and <code>&lt;frame&gt;</code>, encouraging the use of CSS for styling and layout.</li>
+            <li><strong>Mobile and Responsive Design:</strong> HTML5 promotes responsive design practices with the <code>&lt;meta name="viewport"&gt;</code> element, helping developers create web pages that adapt to different screen sizes and devices.</li>
+            <li><strong>APIs and DOM Level 2:</strong> HTML5 includes a variety of APIs (e.g., Drag and Drop, WebSockets, Web Workers) and enhanced DOM (Document Object Model) support, enabling more complex and interactive web applications.</li>
+        </ul>
+
+        <h2>Advantages of HTML5</h2>
+        <ul>
+            <li><strong>Improved Accessibility:</strong> The use of semantic elements enhances the accessibility of web content, making it easier for screen readers and assistive technologies to interpret and navigate.</li>
+            <li><strong>Better Performance:</strong> HTML5 reduces the reliance on external plugins, resulting in faster loading times and better performance.</li>
+            <li><strong>Enhanced User Experience:</strong> New features like audio and video support, geolocation, and offline storage contribute to a richer and more interactive user experience.</li>
+            <li><strong>Future-Proofing:</strong> Adopting HTML5 ensures compatibility with modern browsers and future web standards, providing a more robust and maintainable codebase.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>HTML5 represents a significant advancement over previous versions of HTML, offering a range of new features and improvements that enhance the capabilities of web applications. By adopting HTML5, developers can create more interactive, efficient, and accessible web experiences that meet the demands of modern users and devices.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
